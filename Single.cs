@@ -55,7 +55,7 @@ namespace HW3_2
             {
                 sum += array[i];
             }
-            Console.WriteLine("Counted the average value of the array: ");
+            Console.WriteLine("Average: ");
             return (double)sum / (double)(Len);
         }
     }
