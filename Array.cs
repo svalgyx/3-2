@@ -1,6 +1,6 @@
 namespace HW3_2
 {
-    public abstract class ArrayBase
+    public abstract class Array
     {
         protected bool Init { get; set; }
 
@@ -8,9 +8,9 @@ namespace HW3_2
 
         public abstract double Average();
 
-        protected abstract void CreateByRandom();
+        protected abstract void Randoms();
 
-        protected abstract void CreateByUser();
+        protected abstract void Users();
 
         public ArrayBase(string init)
         {
