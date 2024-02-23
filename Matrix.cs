@@ -49,7 +49,7 @@ namespace HW3_2
 
         public override void Write()
         {
-            Console.WriteLine("Writing two-dimensional array: ");
+            Console.WriteLine("two-dimensional array: ");
             for (int i = 0; i < Rows; i++)
             {
                 string row = "";
