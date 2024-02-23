@@ -1,10 +1,10 @@
 namespace HW3_2
 {
-    public sealed class SingleArray : Array
+    public sealed class Single : Array
     {
         private int Len { get; set; }
         private int[] array;
-        public SingleArray(string init, int len) : base(init)
+        public Single(string init, int len) : base(init)
         {
             Len = len;
             array = new int[len];
