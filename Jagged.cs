@@ -51,7 +51,7 @@ namespace HW3_2
 
         public override void Write()
         {
-            Console.WriteLine("Writing jagged array: ");
+            Console.WriteLine("jagged array: ");
             for (int i = 0; i < Rows; i++)
             {
                 for (int j = 0; j < array[i].Length; j++)
