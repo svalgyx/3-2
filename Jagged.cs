@@ -1,6 +1,6 @@
 namespace HW3_2
 {
-    public sealed class JaggedArray : Array
+    public sealed class Jagged : Array
     {
         private int Rows { get; set; }
         private int[][] array;
