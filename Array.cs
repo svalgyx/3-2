@@ -12,7 +12,7 @@ namespace HW3_2
 
         protected abstract void Users();
 
-        public ArrayBase(string init)
+        public Array(string init)
         {
             Init = true;
             if (init == "no")
