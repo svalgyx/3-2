@@ -5,7 +5,7 @@ namespace HW3_2
         private int Rows {  get; set; }
         private int Columns { get; set; }
         private int[,] array;
-        public MatrixArray(string init, int rows, int columns) : base(init)
+        public Matrix(string init, int rows, int columns) : base(init)
         {
             Rows = rows;
             Columns = columns;
