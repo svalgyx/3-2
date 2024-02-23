@@ -1,6 +1,6 @@
 namespace HW3_2
 {
-    public sealed class MatrixArray : ArrayBase
+    public sealed class MatrixArray : Array
     {
         private int Rows {  get; set; }
         private int Columns { get; set; }
@@ -12,7 +12,7 @@ namespace HW3_2
             array = new int[rows, columns];
         }
 
-        protected override void CreateByUser() {
+        protected override void UserAr() {
             for (int i = 0; i < Rows; i++)
             {
                 string row = Console.ReadLine();
@@ -24,8 +24,8 @@ namespace HW3_2
             }
         }
 
-        protected override void CreateByRandom() {
-            Random rnd = new Random();
+        protected override void RandomAr() {
+            Rnd rnd = new Rnd();
             for (int i = 0; i < Rows; i++)
             {
                 for (int j = 0; j < Columns; j++)
@@ -39,11 +39,11 @@ namespace HW3_2
         {
             if (base.Init)
             {
-                CreateByUser();
+                UserAr();
             }
             else
             {
-                CreateByRandom();
+                RandomAr();
             }
         }
 
