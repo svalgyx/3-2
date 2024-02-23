@@ -1,6 +1,6 @@
 namespace HW3_2
 {
-    public sealed class SingleArray : ArrayBase
+    public sealed class SingleArray : Array
     {
         private int Len { get; set; }
         private int[] array;
@@ -10,7 +10,7 @@ namespace HW3_2
             array = new int[len];
         }
 
-        protected override void CreateByUser() {
+        protected override void UserAr() {
             string[] inputs = Console.ReadLine().Split(' ');
             for (int i = 0; i < Len; i++)
             {
@@ -18,8 +18,8 @@ namespace HW3_2
             }
         }
 
-        protected override void CreateByRandom() {
-            Random rnd = new Random();
+        protected override void RandomAr() {
+            Rnd rnd = new Rnd();
             for (int i = 0; i < Len; i++)
             {
                 array[i] = rnd.Next(0, 1000);
@@ -30,11 +30,11 @@ namespace HW3_2
         {
             if (base.Init)
             {
-                CreateByUser();
+                UserAr();
             }
             else
             {
-                CreateByRandom();
+                RandomAr();
             }
         }
 
