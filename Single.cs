@@ -40,7 +40,7 @@ namespace HW3_2
 
         public override void Write()
         {
-            Console.WriteLine("Writing single array: ");
+            Console.WriteLine("single array: ");
             for (int i = 0; i < array.Length; i++)
             {
                 Console.Write(array[i] + " ");
