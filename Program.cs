@@ -37,7 +37,7 @@ namespace HW3_2
             for (int i = 0; i < arrays.Length; i++)
             {
                 arrays[i].Write();
-                Console.WriteLine($"The average is: {arrays[i].Average()}");
+                Console.WriteLine($"Average is: {arrays[i].Average()}");
             }
         }
     }
