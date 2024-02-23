@@ -7,8 +7,8 @@ namespace HW3_2
     {
         static void Main(string[] args)
         {
-            ArrayBase[] arrays = new ArrayBase[10];
-            Random rnd = new Random();
+            Array[] arrays = new Array[10];
+            Rnd rnd = new Rnd();
             for (int i = 0; i < arrays.Length; i++)
             {
                 int num = rnd.Next(1, 4);
