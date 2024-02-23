@@ -74,7 +74,7 @@ namespace HW3_2
                     counter += 1;
                 }
             }
-            Console.WriteLine("Counted the average value of the array: ");
+            Console.WriteLine("Average: ");
             return (double)sum / (double)counter;
         }
     }
