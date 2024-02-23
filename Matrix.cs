@@ -1,6 +1,6 @@
 namespace HW3_2
 {
-    public sealed class MatrixArray : Array
+    public sealed class Matrix : Array
     {
         private int Rows {  get; set; }
         private int Columns { get; set; }
